@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
   }
-  html,body,main,header,ul,ol,a,h1,p{
+  html,body,main,header,ul,ol,a,h1,p,figure,img,figcaption{
     margin: 0;
     padding: 0;
   }
@@ -24,14 +24,6 @@
   a{
     text-decoration: none; 
     color:black;
-  }
-  .ImgDespachoSN img{
-    height: 50vh;
-    width: 50vh;
-  }
-  .ImgDespachoSN{
-    padding: 0;
-    margin: 0;
   }
   .TituloEM{
     display: flex;
@@ -93,9 +85,16 @@
   .Contenedor_Listas_EM ul{
     font-size: 10px;
   }
-  .Footer div{
-    display:flex ;
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-links,
+  .contact-info {
+    flex: 1;
+    margin: 0 10px;
+  }
+  .footer-links, .contact-info{
+    display: flex;
     flex-direction: column;
-    font-size: 10px;
-    padding-top: 10px
   }
