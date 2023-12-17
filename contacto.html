@@ -17,17 +17,37 @@
         <a href="contacto.html">Contacto</a>
       </nav>
   </header>
-    <main class="main_locales">
-      <div class="local-gralpaz">
-        <h1 class="titulo_local">Backerhaus General Paz</h1>
-        <img src="/assept/multimedia/carta/menu-gp.jpg" alt="carta local gral paz">
-        </div>
-      </div>
-      <div class="local-altacba">
-        <h1 class="titulo_local">Backerhaus Alta Cordoba</h1>
-        <img src="/assept/multimedia/carta/menu-gp.jpg" alt="carta local gral paz">
-      </div>
-    </main> 
+    <main>
+      <form class="form" action="contacto.html" method="post">
+        <label for="id-nombre">Nombre</label>
+        <input
+            id="id-nombre"
+            name="nombre"
+            type="text"
+            minlength="3"
+            placeholder="su nombre"
+            required
+        />
+        <label for="id-email">Email</label>
+        <input
+            id="id-email"
+            name="email"
+            type="email"
+            placeholder="email@email.com"
+            required
+        />
+        <label for="id-consulta">Consulta</label>
+        <textarea
+            id="id-consulta"
+            name="consulta"
+            cols="30"
+            rows="10"
+            required
+        ></textarea>
+        <button type="submit">Enviar consulta</button>
+    </form>
+</section>
+    </main>
     <footer class="footer-info">
       <hr class="linea-blanca">
       <nav>
@@ -42,6 +62,6 @@
         <a href="tel:+213123123"> <i class="fas fa-phone"></i>+213123123</a>
         <a href="#"><i class="far fa-envelope"></i>backerhaus@gmail.com</a>
       </div>
-    </footer>
+  </footer>
   </body>
 </html>
